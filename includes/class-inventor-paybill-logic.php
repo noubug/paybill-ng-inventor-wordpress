@@ -39,9 +39,6 @@ class Inventor_PayBill_Logic {
         $paybill_inventor_paybill_sub_account_code =
             get_theme_mod( 'inventor_paybill_sub_account_code', null );
 
-        $paybill_inventor_paybill_live_mode =
-            get_theme_mod( 'inventor_paybill_live_mode', null );
-
         return ( ! empty( $paybill_inventor_organisation_code ) && ! empty( $paybill_inventor_secret_key ) &&
 
             ! empty( $paybill_inventor_public_key ) );
@@ -149,9 +146,7 @@ class Inventor_PayBill_Logic {
         $paybill_inventor_paybill_sub_account_code =
             get_theme_mod( 'inventor_paybill_sub_account_code', null );
 
-        $paybill_inventor_paybill_live_mode =
-            get_theme_mod( 'inventor_paybill_live_mode', null );
-
+       
 
         if ( empty( $paybill_inventor_secret_key ) || empty( $paybill_inventor_public_key ) ) {
             return false;
@@ -163,16 +158,14 @@ class Inventor_PayBill_Logic {
             "public_key",
             "payment_charge_bearer",
             "organisation_transaction_charge",
-            "paybill_sub_account_code",
-            "paybill_live_mode");
+            "paybill_sub_account_code");
 
         $paybill_values = array($paybill_inventor_organisation_code,
             $paybill_inventor_secret_key,
             $paybill_inventor_public_key,
             $paybill_inventor_payment_charge_bearer,
             $paybill_inventor_organisation_transaction_charge,
-            $paybill_inventor_paybill_sub_account_code,
-            $paybill_inventor_paybill_live_mode);
+            $paybill_inventor_paybill_sub_account_code);
 
 
          $full_array = array_combine($paybill_keys, $paybill_values);
