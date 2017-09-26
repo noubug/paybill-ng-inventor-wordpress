@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Inventor Paybill
- * Version: 0.0.
+ * Version: 0.0.2
  * Description: Adds PayBill.NG Payment Gateway
  * Author: Noubug
  * Author URI: http://noubug.com
