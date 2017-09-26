@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Inventor Paybill
- * Version: 1.4.0
+ * Version: 0.0.
  * Description: Adds PayBill.NG Payment Gateway
- * Author: Kobi Slevin/Noubug
+ * Author: Noubug
  * Author URI: http://noubug.com
- * Plugin URI:
+ * Plugin URI: https://github.com/noubug/paybill-ng-inventor-wordpress/
  * Text Domain: inventor-paybill
  * Domain Path: /languages/
  * License: GNU General Public License v3.0
@@ -132,8 +132,6 @@ if ( ! class_exists( 'Inventor_PayBill' ) && class_exists( 'Inventor' ) ) {
     function pay_bill_ng_processing_form_custom_redirect()
     {
         if (is_page('Inventor-Processing-PaybillNG')) {
-
-            //include INVENTOR_PAYBILL_DIR . 'templates/inventor-paybill-process-payment_page.php';
     }
 }
 
