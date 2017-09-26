@@ -9,4 +9,4 @@ INSTRUCTIONS
 4) Fill the required fields and save.
 5) Pick an item thats for sell and proceed to payment there you'll see the option pay with paybill online gateway.
 
-NB: Remember to use the test credientals to test.
+NB: Remember to use the test credentials to test.
