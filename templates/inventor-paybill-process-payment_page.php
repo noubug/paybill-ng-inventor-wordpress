@@ -68,11 +68,10 @@ class ProcessPayBillNGUserPayment {
 
 
             <script type="text/javascript">
-
-               // $data['price']
+                
                 PayBillService.load({
                     'customer_email': '<?php $data['email'] ?>',
-                    'amount': 4444,
+                    'amount': <?= $data['price'] ?>,
                     'organization_code': '<?= $payload['organisation_code']  ?>',
                     'organization_unique_reference': '<?= $data['order_id'] ?>',
                     'organization_public_key': '<?= $payload['public_key']  ?>',
